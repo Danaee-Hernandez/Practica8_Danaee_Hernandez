@@ -1,3 +1,5 @@
+EJERCICIO 1
+
 /*
 Practica 8                                    Hernandez Sanchez Valeria Danaee
 fecha de entrega:
@@ -25,3 +27,168 @@ fecha de entrega:
 	  }
  	 return 0;
  }
+
+
+
+
+
+
+
+
+
+EJERCICIO 2
+
+/*
+Practica 8                          Hernandez Sanchez Valeria Danaee
+fecha: 25 nov 2020
+*/
+
+
+/*
+ Ejercicio 2: algoritmo para determinar cuánto se debe pagar por equis cantidad de lápices
+*/
+
+/*Declaracion de librerias*/
+#include<stdio.h>
+
+/*Declaracion de funcion principal*/
+int main(){
+	/*Declaracion de variables*/
+	int cl, t;
+	
+	/*Bloque de instrucciones*/
+	printf("\n\n escribe la cantidad de lapices comprados:\t");
+	scanf("%d",&cl);
+	
+	if ( cl == 1000)
+	{
+		
+		t=((cl*85)/100);
+		
+		printf("\n\n Se debe pagar: $%d \n\n",t);
+	}
+	else 
+	{
+		t=((cl*90)/100);
+		printf("\n\n Se debe pagar: $%d \n\n",t);
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+EJERCICIO 3
+
+/*
+Practica 8                          Hernandez Sanchez Valeria Danaee
+fecha: 25 nov 2020
+*/
+
+
+/*
+ Ejercicio 3: algoritmo para determinar el descuento de un traje
+*/
+
+/*Declaracion de librerias*/
+#include<stdio.h>
+
+/*Declaracion de funcion principal*/
+int main(){
+	/*Declaracion de variables*/
+	float pi, pf, d;
+	
+	/*Bloque de instrucciones*/
+	printf("\n\n escribe el precio del traje:\t");
+	scanf("%f",&pi);
+	
+	if ( pi > 2500)
+	{
+		
+		d=(pi*15)/100;
+		pf=pi-d;
+		printf("\n\n Se hace un descuento de: $%f \n\n",d);
+		printf("\n\n el precio final es: $%f \n\n",pf);
+	}
+	else 
+	{
+		d=((pi*8)/100);
+		 pf=(pi-d);
+		printf("\n\n Se hace un descuento de: $%f\n\n",d);
+		printf("\n\n El precio final es:$%f",pf);
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+EJERCICIO 4
+
+/*
+Practica 8                          Hernandez Sanchez Valeria Danaee
+fecha: 25 nov 2020
+*/
+
+
+/*
+ Ejercicio 4: algoritmo para determinar el mayor de tres numeros enteros
+*/
+
+/*Declaracion de librerias*/
+#include<stdio.h>
+
+/*Declaracion de funcion principal*/
+int main(){
+	/*Declaracion de variables*/
+	int a, b, c, M;
+	
+	/*Bloque de instrucciones*/
+	printf("\n\n Escribe la primera cantidad:\t");
+	scanf("%d",&a);
+	printf("\n\n Escribe la segunda cantidad:\t");
+	scanf("%d",&b);
+	printf("\n\n Escribe la tercera cantidad:\t");
+	scanf("%d",&c);
+	
+	if (a>b)
+	{
+		if (a>c)
+		{
+			M=a;
+		}
+		else
+		{
+			M=c;
+		}
+	}
+	else
+	{
+		if (b>c)
+		{
+			M=b;
+		}
+		else
+		{
+			M=c;
+		}
+	}
+	printf("\n\n La cantidad mayor es: %d\n\n",M);
+	
+	return 0;
+}
+
