@@ -192,3 +192,70 @@ int main(){
 	return 0;
 }
 
+
+
+
+
+
+
+
+
+
+EJERCICIO 5
+
+/*
+Practica 8                       Hernandez Sanchez Valeria Danaee
+Fecha:26 de nov 2020
+*/
+
+/*Ejercicio 5: Este programa sirve para determinar cuanto se debera pagar 
+por un viaje escolar dependiendo de los alumnos asistentes
+*/
+
+/* Declaracion de de librerias*/
+#include<stdio.h>
+
+/*Declaracion de funcion principal*/
+ int main(){
+ 	
+ 	/*Declaracion de variables*/
+ 	int al, pc, ca;
+ 	
+ 	/*Bloque de instrucciones*/
+ 	printf("\n\n Escribe la cantidad de alumnos que iran al viaje:\t");
+ 	scanf("%d",&al);
+ 	
+ 	if (al>=100)
+ 	{
+ 		ca=65;
+ 		pc=(al * ca);
+	}
+	 else
+	 
+	 {
+	 	if (al>=50)
+	 {
+	     	ca=70;
+	 	    pc=(al * 70);
+	 }
+	    else
+	    {
+	    	if (al>=30)
+	    	{
+	    	    ca=95;
+                pc=(al*95);	
+			}
+			
+			else
+			{
+				ca=(4000/al);
+				pc=4000;
+			}
+		}
+	 }
+	 
+	 printf("\n\n Cada alumno debe pagar: $%d",ca);
+	 printf("\n A la compania se debe pagar: $%d \n\n",pc);
+	 return 0;
+	 
+ }
